@@ -19,14 +19,12 @@ Edit `config.lua`:
 ```lua
 Config = {}
 
--- Language setting ("en", "ar", "cn", etc.)
-Config.Locale = "ar"
+Config.Locale = "ar" -- Language setting, can be "en" for English or "ar" for Arabic or other supported languages in Locales.lua
 
--- Command name
-Config.MaxVehicleModsCommand = "max"
-
--- Framework type: "auto", "esx", or "standalone"
+-- use "esx" or "standalone" for the framework type
 Config.Framework = "auto"
 
--- Ace permission for standalone framework
-Config.AcePermission = "command.maxvehicle"
+Config.MaxVehicleModsCommand = "max" -- Command to trigger max vehicle mods
+Config.AdminGroup = "superadmin" -- Group that can use the command
+
+Config.AcePermission = "admin.maxmods" -- Ace permission for the command
